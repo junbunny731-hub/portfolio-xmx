@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio Scene</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./page-transition.css" />
+  </head>
+  <body>
+    <main class="viewport" aria-label="Portfolio scene">
+      <div class="scene-stage">
+        <img
+          class="scene"
+          src="./assets/scene.webp"
+          alt="Portfolio cover and entrance scene"
+          width="3840"
+          height="1462"
+          draggable="false" decoding="async"
+        />
+        <button
+          class="view1-button"
+          style="--x: 1971px; --y: 124px; --w: 40px; --h: 40px"
+          type="button"
+          data-view="cover"
+          aria-label="Back to cover"
+        >
+          <img src="./assets/back-button.webp" alt="" draggable="false" decoding="async" />
+        </button>
+        <button
+          class="entry-object"
+          style="--x: 2030.994px; --y: 127px; --w: 338.055px; --h: 435.459px; --asset: url('./assets/project-1.webp')"
+          type="button"
+          data-entry="project-1"
+          data-href="project-1/"
+          aria-label="Project 1"
+        >
+          <span class="entry-ghost" aria-hidden="true"></span>
+          <img class="entry-art" src="./assets/project-1.webp" alt="" draggable="false" decoding="async" />
+        </button>
+        <button
+          class="entry-object"
+          style="--x: 2223.994px; --y: 623px; --w: 291.025px; --h: 249.764px; --asset: url('./assets/project-2.webp')"
+          type="button"
+          data-entry="project-2"
+          data-href="project-2/"
+          aria-label="Project 2"
+        >
+          <span class="entry-ghost" aria-hidden="true"></span>
+          <img class="entry-art" src="./assets/project-2.webp" alt="" draggable="false" decoding="async" />
+        </button>
+        <button
+          class="entry-object"
+          style="--x: 2459.994px; --y: 266px; --w: 343.137px; --h: 367.136px; --asset: url('./assets/project-3.webp')"
+          type="button"
+          data-entry="project-3"
+          data-href="project-3/"
+          aria-label="Project 3"
+        >
+          <span class="entry-ghost" aria-hidden="true"></span>
+          <img class="entry-art" src="./assets/project-3.webp" alt="" draggable="false" decoding="async" />
+        </button>
+        <button
+          class="entry-object"
+          style="--x: 2628.994px; --y: 670px; --w: 398.381px; --h: 252.888px; --asset: url('./assets/project-4.webp')"
+          type="button"
+          data-entry="project-4"
+          data-href="project-4/"
+          aria-label="Project 4"
+        >
+          <span class="entry-ghost" aria-hidden="true"></span>
+          <img class="entry-art" src="./assets/project-4.webp" alt="" draggable="false" decoding="async" />
+        </button>
+        <button
+          class="entry-object"
+          style="--x: 3289.994px; --y: 332px; --w: 352.153px; --h: 337px; --asset: url('./assets/about-me.webp')"
+          type="button"
+          data-entry="about-me"
+          data-href="about/"
+          aria-label="About Me"
+        >
+          <span class="entry-ghost" aria-hidden="true"></span>
+          <img class="entry-art" src="./assets/about-me.webp" alt="" draggable="false" decoding="async" />
+        </button>
+      </div>
+    </main>
+    <script src="./page-transition.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
