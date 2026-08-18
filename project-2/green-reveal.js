@@ -3,7 +3,9 @@
   const page2Green = document.querySelector('[data-node-id="575:1617"]');
   const page3Green = document.querySelector('[data-node-id="583:1340"]');
   const page2 = document.querySelector('[data-node-id="575:1434"]');
-  const page3 = document.querySelector('[data-node-id="575:1779"]');
+  const page3 =
+    document.querySelector('[data-node-id="575:1779"]') ||
+    document.querySelector(".page-3");
   const page1RevealDelayMs = 300;
   const page2RevealDelayMs = 300;
 
